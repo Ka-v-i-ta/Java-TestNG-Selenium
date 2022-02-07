@@ -12,8 +12,8 @@ import java.util.List;
 
 
 public class App {
-    public static String userName = "kavitabhatt10198";
-        public static String accessKey = "EnPEpA1ykix4uNu5Uh4RhKBEQVGDh71psW2sXDf6lR1NBjGvNi";
+    public static String userName = System.getenv("LT_USERNAME");
+    public static String accessKey = System.getenv("LT_ACCESS_KEY");
     
         public static void main(String args[]) throws MalformedURLException, InterruptedException {
             DesiredCapabilities capabilities = new DesiredCapabilities();
